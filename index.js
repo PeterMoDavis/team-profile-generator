@@ -163,11 +163,11 @@ function getIcon(employee) {
 
 function individualAttr(employee) {
   if (employee.getRole() === "Manager") {
-    return employee.officeNumber;
+    return `Office Number: ${employee.officeNumber}`;
   } else if (employee.getRole() === "Intern") {
-    return employee.school;
+    return `School: ${employee.school}`;
   } else {
-    return employee.github;
+    return `GitHub: <a href="https://github.com/${employee.github}">${employee.github}</a>`;
   }
 }
 
@@ -211,8 +211,10 @@ function buildTeam() {
                         </div>
                         <div class="card-body bg-light">
                             <ul class="list-group border rounded list-group-flush">
-                                <li class="list-group-item">${each.id}</li>
-                                <li class="list-group-item">${each.email}</li>
+                                <li class="list-group-item">ID: ${each.id}</li>
+                                <li class="list-group-item">Email: <a href="mailto: ${
+                                  each.email
+                                }">${each.email}</a></li>
                                 <li class="list-group-item">${individualAttr(
                                   each
                                 )}</li>
