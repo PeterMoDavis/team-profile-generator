@@ -12,7 +12,7 @@ Just open the index.js and using Node, write node index.js in the command line.
 
 ## Usage
 
-##############need video link here!!!!!
+[Video Walk Through](https://drive.google.com/file/d/1G0hlRJyBkNWIK9YCYHfLvotHLMrTXoJg/view?usp=sharing)
 
 ## Credits
 
